@@ -46,7 +46,7 @@ app.use("/api/jobroute", jobroute);
 app.use("/api/jobDescriptionroute", jobDescriptionroute);
 
 app.listen(Port,async()=>{
-    console.log(`server is running on port 3000`)
+    console.log(`server is running on port ${Port}`)
 })
 
 
