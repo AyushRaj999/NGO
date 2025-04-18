@@ -8,7 +8,7 @@ const cors=require("cors")
 const bodyParser=require('body-parser')
 const jobDescriptionroute=require('./Router/JobsDescription/Jobs.js')
 require("dotenv").config();
-const Port = process.env.Port || 4000;
+const Port = process.env.Port || 3000;
 const app=express()
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
