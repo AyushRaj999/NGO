@@ -8,7 +8,7 @@ const cors=require("cors")
 const bodyParser=require('body-parser')
 const jobDescriptionroute=require('./Router/JobsDescription/Jobs.js')
 require("dotenv").config();
-const Port = process.env.Port || 3000;
+const PORT = process.env.Port || 3000;
 const app=express()
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -45,8 +45,8 @@ app.use("/api/vollenterRoute", vollenterroute);
 app.use("/api/jobroute", jobroute);
 app.use("/api/jobDescriptionroute", jobDescriptionroute);
 
-app.listen(Port,async()=>{
-    console.log(`server is running on port ${Port}`)
+app.listen(PORT,async()=>{
+    console.log(`server is running on port ${PORT}`)
 })
 
 
